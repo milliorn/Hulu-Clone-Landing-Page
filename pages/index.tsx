@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import logo from "../public/img/logo.png";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -25,7 +26,7 @@ export default function Home() {
             <h4>Try up to one month free</h4>
             {/** https://stackoverflow.com/a/73618982/11986604 */}
             <Image
-              src="/../public/img/logo.png"
+              src={logo}
               alt="Hulu logo"
               className="logo"
               height="0"
