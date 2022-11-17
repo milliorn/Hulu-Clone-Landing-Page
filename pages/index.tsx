@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import logo from "../public/img/logo.png";
+import logos from "../public/img/logos.png";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -45,6 +46,32 @@ export default function Home() {
             </div>
           </div>
         </header>
+
+        <section className={styles.sub_header}>
+          <Image
+            src={logos}
+            alt="sub header logo"
+            height="0"
+            width="250"
+            style={{ width: "auto", height: "auto", margin: "auto" }}
+          />
+          <div>
+            <h4>Bundle with any Hulu plan & save</h4>
+            <h3>Get Hulu, Disney+ , and ESPN+.</h3>
+            <a href="#" className={styles.sub_link}>
+              Details
+            </a>
+          </div>
+          <div>
+            <a href="#" className={styles.btn_outline}>
+              Get Bundle
+            </a>
+
+            <a href="#" className={styles.sub_link}>
+              Terms apply
+            </a>
+          </div>
+        </section>
       </div>
     </div>
   );

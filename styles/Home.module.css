@@ -42,13 +42,23 @@
   opacity: 0.8;
 }
 
-.btn-outline {
+.btn_outline {
   background: none;
-  color: #fff;
+  border-radius: 5px;
   border: 2px solid #fff;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 14px;
+  min-width: 135px;
+  padding: 20px 32px;
+  text-transform: uppercase;
 }
 
-.btn-outline:hover {
+.btn_outline:hover {
   color: #fff;
   border-color: #ccc;
 }
@@ -64,7 +74,7 @@
   margin-top: 20px;
 }
 
-.sub-link {
+.sub_link {
   display: block;
   color: #ccc;
   font-size: 12px;
@@ -142,7 +152,7 @@
 }
 
 /* Sub Header */
-.sub-header {
+.sub_header {
   display: grid;
   grid-template-columns: 2fr 4fr 2fr;
   gap: 40px;
@@ -156,12 +166,12 @@
   );
 }
 
-.sub-header > div:last-of-type {
+.sub_header > div:last-of-type {
   justify-self: end;
   align-self: end;
 }
 
-.sub-header > div:last-of-type .sub-link {
+.sub_header > div:last-of-type .sub_link {
   text-align: center;
 }
 
@@ -431,18 +441,18 @@
     display: none;
   }
 
-  .sub-header {
+  .sub_header {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 20px;
   }
 
-  .sub-header img {
+  .sub_header img {
     width: 250px;
     margin: auto;
   }
 
-  .sub-header > div:last-of-type {
+  .sub_header > div:last-of-type {
     justify-self: center;
     align-self: center;
   }
