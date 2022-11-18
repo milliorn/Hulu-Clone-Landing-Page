@@ -250,10 +250,10 @@
 }
 
 .live a {
-  text-transform: uppercase;
   font-size: 18px;
   margin-top: 20px;
   text-decoration: underline;
+  text-transform: uppercase;
 }
 
 /* Live Sports */
