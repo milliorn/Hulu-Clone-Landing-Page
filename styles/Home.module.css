@@ -82,15 +82,15 @@
   text-decoration: underline;
 }
 
-.text-xl {
+.text_xl {
   font-size: 70px;
   font-weight: bold;
 }
 
-.sub-text {
-  max-width: 850px;
-  margin-bottom: 10px;
+.sub_text {
   font-size: 24px;
+  margin-bottom: 10px;
+  max-width: 850px;
 }
 
 /* Header */
@@ -177,28 +177,28 @@
 
 /* Categories */
 .categories {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
   padding: 90px 40px;
+  text-align: center;
 }
 
 .categories .covers {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
   margin-top: 40px;
 }
 
 .categories .covers > div {
   height: 500px;
-  width: 300px;
   position: relative;
+  width: 300px;
 }
 
-.categories .cover-grad {
+.categories .cover_grad {
   position: absolute;
   top: 0;
   left: 0;
@@ -212,23 +212,23 @@
     linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
 }
 
-.categories .cover-text {
-  position: absolute;
-  top: 20px;
+.categories .cover_text {
   left: 20px;
+  position: absolute;
   text-align: left;
+  top: 20px;
 }
 
-.categories .cover-1 {
+.categories .cover_1 {
   background: url("../public/img/cover-1.jpg") no-repeat center center / cover;
 }
-.categories .cover-2 {
+.categories .cover_2 {
   background: url("../public/img/cover-2.jpg") no-repeat center center / cover;
 }
-.categories .cover-3 {
+.categories .cover_3 {
   background: url("../public/img/cover-3.jpg") no-repeat center center / cover;
 }
-.categories .cover-4 {
+.categories .cover_4 {
   background: url("../public/img/cover-4.jpg") no-repeat center center / cover;
 }
 
@@ -457,12 +457,12 @@
     align-self: center;
   }
 
-  .text-xl {
+  .text_xl {
     line-height: 1.3;
     font-size: 40px;
   }
 
-  .sub-text {
+  .sub_text {
     font-size: 20px;
   }
 
