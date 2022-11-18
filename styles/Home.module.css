@@ -238,22 +238,22 @@
   padding: 40px;
 }
 
-.live-border {
-  border: 4px solid #1ce783;
+.live_border {
+  align-items: center;
   border-radius: 16px;
-  padding: 100px;
+  border: 4px solid #1ce783;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  padding: 100px;
   text-align: center;
 }
 
 .live a {
-  text-transform: uppercase;
   font-size: 18px;
   margin-top: 20px;
   text-decoration: underline;
+  text-transform: uppercase;
 }
 
 /* Live Sports */
@@ -470,7 +470,7 @@
     grid-template-columns: 1fr;
   }
 
-  .live-border {
+  .live_border {
     padding: 30px 10px;
   }
 
