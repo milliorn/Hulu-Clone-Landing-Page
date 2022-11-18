@@ -129,6 +129,37 @@ export default function Home() {
             <a href="#">View Channels in Your Area</a>
           </div>
         </section>
+
+        <section className={styles.live_sports}>
+          <div className="live-sports-content">
+            <div className="text-xl">Live Sports</div>
+            <div className="sub-text">
+              Catch your games at home or on the go. Stream live games from
+              major college and pro leagues including the NCAA®, NBA, NHL, NFL,
+              and more.
+            </div>
+
+            <div className="live-sports-logos">
+              <div>
+                <Image src="img/live-sports-logo-1.png" alt="" />
+              </div>
+              <div>
+                <Image src="img/live-sports-logo-2.png" alt="" />
+              </div>
+              <div>
+                <Image src="img/live-sports-logo-3.svg" alt="" />
+              </div>
+              <div>
+                <Image src="img/live-sports-logo-4.png" alt="" />
+              </div>
+            </div>
+
+            <div className={styles.legal_text}>
+              Live TV plan required. Regional restrictions, blackouts and
+              additional terms apply. See details
+            </div>
+          </div>
+        </section>
       </div>
     </div>
   );
