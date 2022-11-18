@@ -114,7 +114,7 @@ export default function Home() {
         </section>
 
         <section className={styles.live}>
-          <div className="live-border">
+          <div className={styles.live_border}>
             <h4>Hulu + Live TV</h4>
             <div className="text-xl">Live TV Makes It Better</div>
             <div className="sub-text">
