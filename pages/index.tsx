@@ -1,11 +1,14 @@
+/** next.js */
 import Head from "next/head";
 import Image from "next/image";
-import logo from "../public/img/logo.png";
-import logos from "../public/img/logos.png";
+/** images */
 import logo1 from "../public/img/live-sports-logo-1.png";
 import logo2 from "../public/img/live-sports-logo-2.png";
 import logo3 from "../public/img/live-sports-logo-3.svg";
 import logo4 from "../public/img/live-sports-logo-4.png";
+import logo from "../public/img/logo.png";
+import logos from "../public/img/logos.png";
+/** css */
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
