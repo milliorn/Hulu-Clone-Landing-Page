@@ -171,7 +171,6 @@ export default function Home() {
                 <Image
                   src={logo4}
                   alt="nbc golf logo"
-                  height="0"
                   style={{ width: "auto", height: "auto" }}
                   width="40"
                 />
