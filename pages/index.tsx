@@ -1,7 +1,14 @@
+/** next.js */
 import Head from "next/head";
 import Image from "next/image";
+/** images */
+import logo1 from "../public/img/live-sports-logo-1.png";
+import logo2 from "../public/img/live-sports-logo-2.png";
+import logo3 from "../public/img/live-sports-logo-3.svg";
+import logo4 from "../public/img/live-sports-logo-4.png";
 import logo from "../public/img/logo.png";
 import logos from "../public/img/logos.png";
+/** css */
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -51,7 +58,6 @@ export default function Home() {
           <Image
             src={logos}
             alt="sub header logo"
-            height="0"
             width="250"
             style={{ width: "auto", height: "auto", margin: "auto" }}
           />
@@ -127,6 +133,56 @@ export default function Home() {
               additional terms apply. See details
             </div>
             <a href="#">View Channels in Your Area</a>
+          </div>
+        </section>
+
+        <section className={styles.live_sports}>
+          <div className={styles.live_sports_content}>
+            <div className={styles.text_xl}>Live Sports</div>
+            <div className="sub-text">
+              Catch your games at home or on the go. Stream live games from
+              major college and pro leagues including the NCAA®, NBA, NHL, NFL,
+              and more.
+            </div>
+
+            <div className={styles.live_sports_logos}>
+              <div>
+                <Image
+                  alt="cbs sports logo"
+                  src={logo1}
+                  style={{ width: "auto", height: "auto" }}
+                  width="40"
+                />
+              </div>
+              <div>
+                <Image
+                  alt="espn logo"
+                  src={logo2}
+                  style={{ width: "auto", height: "auto" }}
+                  width="40"
+                />
+              </div>
+              <div>
+                <Image
+                  alt="nbc logo"
+                  src={logo3}
+                  style={{ width: "auto", height: "auto" }}
+                  width="40"
+                />
+              </div>
+              <div>
+                <Image
+                  src={logo4}
+                  alt="nbc golf logo"
+                  style={{ width: "auto", height: "auto" }}
+                  width="40"
+                />
+              </div>
+            </div>
+            <div className={styles.legal_text}>
+              Live TV plan required. Regional restrictions, blackouts and
+              additional terms apply. See details
+            </div>
           </div>
         </section>
       </div>
