@@ -264,14 +264,14 @@
   position: relative;
 }
 
-.live-sports-content {
-  position: absolute;
-  top: 160px;
+.live_sports_content {
   left: 100px;
   max-width: 550px;
+  position: absolute;
+  top: 160px;
 }
 
-.live-sports-logos {
+.live_sports_logos {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -279,7 +279,7 @@
   width: 300px;
 }
 
-.live-sports-logos > div {
+.live_sports_logos > div {
   align-items: center;
   background: url("../public/img/network-logo-bg.png") no-repeat center center /
     cover;
@@ -289,7 +289,7 @@
   width: 60px;
 }
 
-.live-sports-logos img {
+.live_sports_logos img {
   width: 40px;
 }
 
@@ -479,10 +479,10 @@
       center / cover;
   }
 
-  .live-sports-content {
-    top: 30px;
+  .live_sports_content {
     left: 30px;
     margin-top: 60px;
+    top: 30px;
   }
 
   .footer-lists {
