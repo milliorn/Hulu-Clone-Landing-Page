@@ -2,12 +2,16 @@
 import Head from "next/head";
 import Image from "next/image";
 /** images */
+import facebook from "../public/img/facebook.svg";
+import instagram from "../public/img/instagram.svg";
 import logo1 from "../public/img/live-sports-logo-1.png";
 import logo2 from "../public/img/live-sports-logo-2.png";
 import logo3 from "../public/img/live-sports-logo-3.svg";
 import logo4 from "../public/img/live-sports-logo-4.png";
 import logo from "../public/img/logo.png";
 import logos from "../public/img/logos.png";
+import twitter from "../public/img/twitter.svg";
+import youtube from "../public/img/youtube.svg";
 /** css */
 import styles from "../styles/Home.module.css";
 
@@ -150,32 +154,28 @@ export default function Home() {
                 <Image
                   alt="cbs sports logo"
                   src={logo1}
-                  style={{ width: "auto", height: "auto" }}
-                  width="40"
+                  style={{ width: "40px", height: "auto" }}
                 />
               </div>
               <div>
                 <Image
                   alt="espn logo"
                   src={logo2}
-                  style={{ width: "auto", height: "auto" }}
-                  width="40"
+                  style={{ width: "40px", height: "auto" }}
                 />
               </div>
               <div>
                 <Image
                   alt="nbc logo"
                   src={logo3}
-                  style={{ width: "auto", height: "auto" }}
-                  width="40"
+                  style={{ width: "40px", height: "auto" }}
                 />
               </div>
               <div>
                 <Image
                   src={logo4}
                   alt="nbc golf logo"
-                  style={{ width: "auto", height: "auto" }}
-                  width="40"
+                  style={{ width: "40px", height: "auto" }}
                 />
               </div>
             </div>
@@ -185,6 +185,111 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <footer>
+          <div className={styles.footer_container}>
+            <div className={styles.footer_lists}>
+              <ul>
+                <li className={styles.list_head}>BROWSE</li>
+                <li>
+                  <a href="#">Streaming Library</a>
+                </li>
+                <li>
+                  <a href="#">Live TV</a>
+                </li>
+                <li>
+                  <a href="#">Live News</a>
+                </li>
+                <li>
+                  <a href="#">Live Sports</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">TV Shows</a>
+                </li>
+                <li>
+                  <a href="#">Movies</a>
+                </li>
+                <li>
+                  <a href="#">Originals</a>
+                </li>
+                <li>
+                  <a href="#">Networks</a>
+                </li>
+                <li>
+                  <a href="#">Kids</a>
+                </li>
+                <li>
+                  <a href="#">FX on Hulu</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">Hulu, Disney+, and ESPN+</a>
+                </li>
+                <li>
+                  <a href="#">Disney Bundle</a>
+                </li>
+                <li>
+                  <a href="#">HBO Max</a>
+                </li>
+                <li>
+                  <a href="#">Cinimax</a>
+                </li>
+                <li>
+                  <a href="#">Showtime</a>
+                </li>
+                <li>
+                  <a href="#">STARZ</a>
+                </li>
+              </ul>
+              <ul>
+                <li className={styles.list_head}>HELP</li>
+                <li>
+                  <a href="#">Account & Billing</a>
+                </li>
+                <li>
+                  <a href="#">Plans & Pricing</a>
+                </li>
+                <li>
+                  <a href="#">Supported Devices</a>
+                </li>
+                <li>
+                  <a href="#">Accesibility</a>
+                </li>
+              </ul>
+              <ul>
+                <li className={styles.list_head}>ABOUT US</li>
+                <li>
+                  <a href="#">Press</a>
+                </li>
+                <li>
+                  <a href="#">Jobs</a>
+                </li>
+                <li>
+                  <a href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+            <div className={styles.divider}></div>
+
+            <div className={styles.social_icons}>
+              <a href="#">
+                <Image src={facebook} alt="facebook" />
+              </a>
+              <a href="#">
+                <Image src={twitter} alt="twitter" />
+              </a>
+              <a href="#">
+                <Image src={youtube} alt="youtube" />
+              </a>
+              <a href="#">
+                <Image src={instagram} alt="instagram" />
+              </a>
+            </div>
+          </div>
+        </footer>
       </div>
     </div>
   );
