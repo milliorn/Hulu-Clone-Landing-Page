@@ -188,9 +188,9 @@ export default function Home() {
 
         <footer>
           <div className={styles.footer_container}>
-            <div className="footer-lists">
+            <div className={styles.footer_lists}>
               <ul>
-                <li className="list-head">BROWSE</li>
+                <li className={styles.list_head}>BROWSE</li>
                 <li>
                   <a href="#">Streaming Library</a>
                 </li>
@@ -245,7 +245,7 @@ export default function Home() {
                 </li>
               </ul>
               <ul>
-                <li className="list-head">HELP</li>
+                <li className={styles.list_head}>HELP</li>
                 <li>
                   <a href="#">Account & Billing</a>
                 </li>
@@ -260,7 +260,7 @@ export default function Home() {
                 </li>
               </ul>
               <ul>
-                <li className="list-head">ABOUT US</li>
+                <li className={styles.list_head}>ABOUT US</li>
                 <li>
                   <a href="#">Press</a>
                 </li>

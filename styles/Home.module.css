@@ -300,12 +300,12 @@
   padding: 40px;
 }
 
-.footer-lists {
+.footer_lists {
   display: flex;
   justify-content: space-between;
 }
 
-.footer-lists .list-head {
+.footer_lists .list_head {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 5px;
@@ -476,7 +476,7 @@
     top: 30px;
   }
 
-  .footer-lists {
+  .footer_lists {
     flex-direction: column;
   }
 
