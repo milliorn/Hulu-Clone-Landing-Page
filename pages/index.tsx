@@ -1,7 +1,11 @@
 /** next.js */
 import Head from "next/head";
 import Image from "next/image";
-/** images */
+/** react */
+import { useEffect, useState } from "react";
+import Modal, { Styles } from "react-modal";
+/** assets */
+import close from "../public/img/close.svg";
 import facebook from "../public/img/facebook.svg";
 import instagram from "../public/img/instagram.svg";
 import logo1 from "../public/img/live-sports-logo-1.png";
@@ -12,10 +16,53 @@ import logo from "../public/img/logo.png";
 import logos from "../public/img/logos.png";
 import twitter from "../public/img/twitter.svg";
 import youtube from "../public/img/youtube.svg";
-/** css */
+/** styles */
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const [modalIsOpen, setIsOpen] = useState(false);
+
+  function openModal(): void {
+    setIsOpen(true);
+
+    const modalRefElem = document.querySelector<HTMLElement>(".modal");
+
+    if (modalRefElem) {
+      modalRefElem.style.display = "block";
+    }
+  }
+
+  function closeModal(): void {
+    setIsOpen(false);
+
+    const modalRefElem = document.querySelector<HTMLElement>(".modal");
+
+    if (modalRefElem) {
+      modalRefElem.style.display = "none";
+    }
+  }
+
+  /** https://stackoverflow.com/a/57613476/11986604 */
+  useEffect(() => {
+    function handleEsc(event: { keyCode: number }): void {
+      if (event.keyCode === 27) {
+        closeModal();
+      }
+    }
+  }, []);
+
+  const customStyles = {
+    content: {
+      background: "rgba(0, 0, 0, 0.5)",
+      height: "100%",
+      left: 0,
+      position: "fixed",
+      top: 0,
+      width: "100%",
+      zIndex: 0,
+    },
+  } as Styles;
+
   return (
     <div className={styles.container}>
       <Head>
@@ -25,21 +72,59 @@ export default function Home() {
           content="Watch TV shows and movies online. Stream TV episodes of Grey's Anatomy, This Is Us, Bob's Burgers, Brooklyn Nine-Nine, Empire, SNL, and popular movies on your favorite devices. Start your free trial now. Cancel anytime."
           key="desc"
         />
-
         <title>Stream TV and Movies Live and Online | Hulu</title>
       </Head>
 
       <div className={styles.body}>
         <header className={styles.header}>
           <nav>
-            <ul>
-              <li>
-                <button className={styles.btn_login}>Log In</button>
-              </li>
-            </ul>
+            <button className={styles.btn_login} onClick={openModal}>
+              Login
+            </button>
+            <Modal
+              isOpen={modalIsOpen}
+              onRequestClose={closeModal}
+              style={customStyles}
+              /** https://stackoverflow.com/a/50625073/11986604 */
+              ariaHideApp={false}
+            >
+              <div className="modal" id="modal">
+                <div className={styles.modal_box}>
+                  <div className={styles.modal_body}>
+                    <h3 className={styles.modal_body_h3}>Log In</h3>
+                    <form>
+                      <div className={styles.form_control}>
+                        <label htmlFor="email">Email</label>
+                        <input type="email" id="email" />
+                      </div>
+                      <div className={styles.form_control}>
+                        <label htmlFor="password">Password</label>
+                        <input type="password" id="password" />
+                      </div>
+                      <p>
+                        <a href="#">Forgot your email or password</a>
+                      </p>
+                      <button className={styles.btn_dark}>Log In</button>
+                    </form>
+                  </div>
+                  <div className={styles.modal_footer}>
+                    <p>
+                      Don&apos;t have an account?
+                      <a href="#">Start your free trial</a>
+                    </p>
+                  </div>
+                  <Image
+                    className={styles.close}
+                    src={close}
+                    onClick={closeModal}
+                    alt="close"
+                  />
+                </div>
+              </div>
+            </Modal>
           </nav>
 
-          <div className={styles.header_content}>
+          <section className={styles.header_content}>
             <h4>Try up to one month free</h4>
             {/** https://stackoverflow.com/a/73618982/11986604 */}
             <Image
@@ -60,7 +145,7 @@ export default function Home() {
             <div className={styles.legal_text}>
               Free trial for new & eligible returning subscribers only.
             </div>
-          </div>
+          </section>
         </header>
 
         <section className={styles.sub_header}>

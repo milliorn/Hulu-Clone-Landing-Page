@@ -63,9 +63,22 @@
   color: #fff;
 }
 
-.btn-dark {
+.btn_dark {
   background: #000;
+  border-radius: 5px;
+  border: none;
   color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 14px;
+  margin-top: 30px;
+  min-width: 135px;
+  padding: 20px 32px;
+  text-transform: uppercase;
+  width: 100%;
 }
 
 .legal_text {
@@ -325,27 +338,17 @@
 }
 
 /* Modal */
-.modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
 
-.modal-box {
+.modal_box {
   margin: 10% auto;
   width: 400px;
   background: #fff;
   color: #333;
   position: relative;
-  animation: modalopen 1s;
+  animation: openModal 1s;
 }
 
-@keyframes modalopen {
+@keyframes openModal {
   from {
     opacity: 0;
   }
@@ -355,17 +358,12 @@
   }
 }
 
-.modal-body {
+.modal_body {
   padding: 50px;
 }
 
-.modal-body h3 {
-  font-weight: bold;
-}
-
-.modal-body .btn {
-  width: 100%;
-  margin-top: 30px;
+.modal_body_h3 {
+  font-weight: 100;
 }
 
 .modal .close {
@@ -377,7 +375,7 @@
   right: 20px;
 }
 
-.modal .modal-footer {
+.modal_footer {
   background: #f7f7f9;
   color: #333;
   padding: 20px 0;
@@ -385,21 +383,21 @@
   text-align: center;
 }
 
-.modal .modal-footer a {
+.modal .modal_footer a {
   color: steelblue;
 }
 
 /* Form */
-.form-control {
+.form_control {
   margin: 20px 0;
 }
 
-.form-control label {
+.form_control label {
   display: block;
   text-transform: uppercase;
 }
 
-.form-control input {
+.form_control input {
   width: 100%;
   border: 2px #ccc solid;
   border-radius: 5px;
@@ -480,7 +478,7 @@
     flex-direction: column;
   }
 
-  .modal .modal-box {
+  .modal .modal_box {
     width: 350px;
   }
 }
