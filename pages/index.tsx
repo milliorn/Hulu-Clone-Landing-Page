@@ -272,9 +272,9 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className="divider"></div>
+            <div className={styles.divider}></div>
 
-            <div className="social-icons">
+            <div className={styles.social_icons}>
               <a href="#">
                 <Image src={facebook} alt="facebook" />
               </a>

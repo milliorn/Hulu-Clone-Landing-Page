@@ -306,22 +306,22 @@
 }
 
 .footer_lists .list_head {
-  text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 5px;
+  text-transform: uppercase;
 }
 
 .divider {
-  width: 100%;
-  height: 3px;
   border-top: 1px #ccc solid;
+  height: 3px;
   margin: 30px 0;
+  width: 100%;
 }
 
-.social-icons img {
-  width: 25px;
+.social_icons img {
   height: 25px;
   margin-right: 25px;
+  width: 25px;
 }
 
 /* Modal */
