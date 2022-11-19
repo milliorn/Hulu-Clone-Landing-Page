@@ -294,18 +294,9 @@
 }
 
 /* Footer */
-.footer {
-  background: #ebedf2;
-  color: #333;
-}
-
-.footer a {
-  color: #333;
-}
-
-.footer-container {
-  max-width: 1100px;
+.footer_container {
   margin: auto;
+  max-width: 1100px;
   padding: 40px;
 }
 
