@@ -273,8 +273,8 @@
   align-items: center;
   display: flex;
   justify-content: space-between;
-  margin-top: 40px;
-  width: 300px;
+  margin-top: 2.5rem;
+  width: 18rem;
 }
 
 .live_sports_logos > div {
