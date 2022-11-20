@@ -91,7 +91,7 @@ export default function Home() {
               alt="Hulu logo"
               className="logo"
               height="0"
-              style={{ width: "200px", height: "auto", margin: "20px 0" }}
+              style={{ width: "256px", height: "auto", margin: "20px 0" }}
             />
             <div className={styles.header_text_1}>
               Watch thousands of TV shows and movies.

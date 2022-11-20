@@ -141,7 +141,7 @@
     rgba(0, 0, 0, 8e-5) 100%
   );
   content: "";
-  height: 180px;
+  height: 11rem;
   left: 0;
   position: absolute;
   top: 0;
@@ -159,9 +159,9 @@
     #08141f 100%
   );
   display: grid;
-  gap: 40px;
+  gap: 2.5rem;
   grid-template-columns: 2fr 4fr 2fr;
-  padding: 30px 40px;
+  padding: 2rem 2.5rem;
 }
 
 .sub_header > div:last-of-type {
