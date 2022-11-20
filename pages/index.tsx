@@ -91,8 +91,7 @@ export default function Home() {
               alt="Hulu logo"
               className="logo"
               height="0"
-              width="270"
-              style={{ width: "auto", height: "auto", margin: "20px 0" }}
+              style={{ width: "200px", height: "auto", margin: "20px 0" }}
             />
             <div className={styles.header_text_1}>
               Watch thousands of TV shows and movies.
@@ -111,7 +110,7 @@ export default function Home() {
           <Image
             src={logos}
             alt="sub header logo"
-            width="250"
+            width="192"
             style={{ width: "auto", height: "auto", margin: "auto" }}
           />
           <div>
@@ -185,14 +184,25 @@ export default function Home() {
               Live TV plan required. Regional restrictions, blackouts and
               additional terms apply. See details
             </div>
-            <a href="#">View Channels in Your Area</a>
+            <a
+              href="#"
+              style={{
+                color: "white",
+              }}
+            >
+              View Channels in Your Area
+            </a>
           </div>
         </section>
 
         <section className={styles.live_sports}>
           <div className={styles.live_sports_content}>
             <div className={styles.text_xl}>Live Sports</div>
-            <div className="sub-text">
+            <div
+              style={{
+                fontSize: "1.3rem",
+              }}
+            >
               Catch your games at home or on the go. Stream live games from
               major college and pro leagues including the NCAA®, NBA, NHL, NFL,
               and more.

@@ -6,22 +6,6 @@
   overflow-x: hidden;
 }
 
-.btn {
-  background: #fff;
-  border-radius: 5px;
-  border: none;
-  color: #333;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 15px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  line-height: 14px;
-  min-width: 135px;
-  padding: 20px 32px;
-  text-transform: uppercase;
-}
-
 .btn_cta {
   background: #fff;
   border-radius: 5px;
@@ -404,7 +388,7 @@
 }
 
 @media (max-width: 768px) {
-  .header .logo {
+  .logo {
     width: 200px;
   }
 
