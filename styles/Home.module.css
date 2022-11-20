@@ -323,7 +323,7 @@
 
 .modal_box {
   margin: 10% auto;
-  width: 400px;
+  width: 24rem;
   background: #fff;
   color: #333;
   position: relative;
@@ -341,7 +341,7 @@
 }
 
 .modal_body {
-  padding: 50px;
+  padding: 3rem;
 }
 
 .modal_body_h3 {
