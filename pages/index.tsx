@@ -89,7 +89,7 @@ export default function Home() {
             <Image
               src={logo}
               alt="Hulu logo"
-              className="logo"
+              className={styles.logo}
               height="0"
               style={{ width: "256px", height: "auto", margin: "20px 0" }}
             />
@@ -112,6 +112,7 @@ export default function Home() {
             alt="sub header logo"
             width="256"
             style={{ width: "256", height: "auto" }}
+            className={styles.sub_header_img}
           />
           <div>
             <h4>Bundle with any Hulu plan & save</h4>

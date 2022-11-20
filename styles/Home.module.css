@@ -191,7 +191,7 @@
 }
 
 .categories .covers > div {
-  height: 31rem;
+  height: 32rem;
   position: relative;
   width: 18rem;
 }
@@ -386,13 +386,8 @@
 }
 
 @media (max-width: 768px) {
-  .logo {
-    width: 200px;
-  }
-
-  .header .header_content {
-    text-align: center;
-    padding: 0 20px;
+  .header_content {
+    padding: 0 1.25rem;
   }
 
   .header .header_text_1 {
@@ -404,28 +399,28 @@
   }
 
   .sub_header {
+    gap: 20px;
     grid-template-columns: 1fr;
     text-align: center;
-    gap: 20px;
   }
 
-  .sub_header img {
-    width: 250px;
+  .sub_header_img {
     margin: auto;
+    width: 248px;
   }
 
   .sub_header > div:last-of-type {
-    justify-self: center;
     align-self: center;
+    justify-self: center;
   }
 
   .text_xl {
+    font-size: 2.5rem;
     line-height: 1.3;
-    font-size: 40px;
   }
 
   .sub_text {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
 
   .categories .covers {
@@ -433,7 +428,7 @@
   }
 
   .live_border {
-    padding: 30px 10px;
+    padding: 1.75rem 0.625rem;
   }
 
   .live_sports {
@@ -453,5 +448,11 @@
 
   .modal .modal_box {
     width: 350px;
+  }
+}
+
+@media (max-width: 425px) {
+  .header_content {
+    text-align: center;
   }
 }
