@@ -7,12 +7,12 @@
 }
 
 a {
-  color: #fff;
+  color: #000;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ccc;
+  color: #aaa;
 }
 
 ul {
