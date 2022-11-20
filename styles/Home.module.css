@@ -307,16 +307,16 @@
 }
 
 .divider {
-  border-top: 2px #ccc solid;
+  border-top: 1px #ccc solid;
   height: 0.125rem;
   margin: 2rem 0;
   width: 100%;
 }
 
-.social_icons img {
-  height: 25px;
-  margin-right: 25px;
-  width: 25px;
+.social_icons_img {
+  height: 1.5rem;
+  margin-right: 1.5rem;
+  width: 1.5rem;
 }
 
 /* Modal */

@@ -330,16 +330,32 @@ export default function Home() {
 
             <div className={styles.social_icons}>
               <a href="#">
-                <Image src={facebook} alt="facebook" />
+                <Image
+                  src={facebook}
+                  alt="facebook"
+                  className={styles.social_icons_img}
+                />
               </a>
               <a href="#">
-                <Image src={twitter} alt="twitter" />
+                <Image
+                  src={twitter}
+                  alt="twitter"
+                  className={styles.social_icons_img}
+                />
               </a>
               <a href="#">
-                <Image src={youtube} alt="youtube" />
+                <Image
+                  src={youtube}
+                  alt="youtube"
+                  className={styles.social_icons_img}
+                />
               </a>
               <a href="#">
-                <Image src={instagram} alt="instagram" />
+                <Image
+                  src={instagram}
+                  alt="instagram"
+                  className={styles.social_icons_img}
+                />
               </a>
             </div>
           </div>
