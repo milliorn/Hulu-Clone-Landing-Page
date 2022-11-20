@@ -248,8 +248,8 @@
 }
 
 .live a {
-  font-size: 18px;
-  margin-top: 20px;
+  font-size: 1.125rem;
+  margin-top: 1.25rem;
   text-decoration: underline;
   text-transform: uppercase;
 }
@@ -263,7 +263,7 @@
 }
 
 .live_sports_content {
-  left: 100px;
+  left: 6rem;
   max-width: 550px;
   position: absolute;
   top: 160px;
