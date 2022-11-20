@@ -366,15 +366,6 @@
   font-weight: 100;
 }
 
-.modal .close {
-  cursor: pointer;
-  height: 23px;
-  width: 23px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
 .modal_footer {
   background: #f7f7f9;
   color: #333;
@@ -384,7 +375,7 @@
 }
 
 .modal .modal_footer a {
-  color: steelblue;
+  color: black;
 }
 
 /* Form */
