@@ -107,12 +107,7 @@ export default function Home() {
         </header>
 
         <section className={styles.sub_header}>
-          <Image
-            src={logos}
-            alt="sub header logo"
-            width="192"
-            style={{ width: "auto", height: "auto", margin: "auto" }}
-          />
+          <Image src={logos} alt="sub header logo" width="256" />
           <div>
             <h4>Bundle with any Hulu plan & save</h4>
             <h3>Get Hulu, Disney+ , and ESPN+.</h3>
