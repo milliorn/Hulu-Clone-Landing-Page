@@ -129,8 +129,8 @@
 }
 
 .header .header_text_2 {
-  font-size: 18px;
-  margin: 25px 0;
+  font-size: 1.125rem;
+  margin: 1.5rem 0;
 }
 
 .header::after {
