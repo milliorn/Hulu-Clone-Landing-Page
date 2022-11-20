@@ -282,9 +282,9 @@
   background: url("../public/img/network-logo-bg.png") no-repeat center center /
     cover;
   display: flex;
-  height: 60px;
+  height: 4rem;
   justify-content: center;
-  width: 60px;
+  width: 4rem;
 }
 
 .live_sports_logos img {
