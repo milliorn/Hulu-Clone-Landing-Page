@@ -86,15 +86,15 @@
 }
 
 .sub_text {
-  font-size: 24px;
-  margin-bottom: 10px;
-  max-width: 850px;
+  font-size: 1.5rem;
+  margin-bottom: 0.625rem;
+  max-width: 48rem;
 }
 
 /* Header */
 .header {
   background: url("../public/img/header.jpg") no-repeat center center / cover;
-  height: 530px;
+  height: 32rem;
 }
 
 .header nav {
