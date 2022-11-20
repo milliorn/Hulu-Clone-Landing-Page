@@ -191,9 +191,9 @@
 }
 
 .categories .covers > div {
-  height: 500px;
+  height: 28rem;
   position: relative;
-  width: 300px;
+  width: 18rem;
 }
 
 .categories .cover_grid {
