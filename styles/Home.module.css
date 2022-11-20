@@ -94,7 +94,7 @@
 /* Header */
 .header {
   background: url("../public/img/header.jpg") no-repeat center center / cover;
-  height: 32rem;
+  height: 33rem;
 }
 
 .header nav {
@@ -191,7 +191,7 @@
 }
 
 .categories .covers > div {
-  height: 28rem;
+  height: 31rem;
   position: relative;
   width: 18rem;
 }
