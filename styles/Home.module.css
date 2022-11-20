@@ -233,17 +233,17 @@
 /* Live */
 .live {
   background: #151516;
-  padding: 40px;
+  padding: 2.5rem;
 }
 
 .live_border {
   align-items: center;
-  border-radius: 16px;
-  border: 4px solid #1ce783;
+  border-radius: 1rem;
+  border: 0.25rem solid #1ce783;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 100px;
+  padding: 7rem;
   text-align: center;
 }
 
