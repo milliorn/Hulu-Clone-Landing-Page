@@ -211,10 +211,10 @@
 }
 
 .categories .cover_text {
-  left: 20px;
+  left: 1.25rem;
   position: absolute;
   text-align: left;
-  top: 20px;
+  top: 1.25rem;
 }
 
 .categories .cover_1 {
