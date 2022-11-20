@@ -437,22 +437,34 @@
   }
 
   .live_sports_content {
-    left: 30px;
-    margin-top: 60px;
-    top: 30px;
+    left: 1.875rem;
+    margin-top: 3.75rem;
+    top: 1.875rem;
   }
 
   .footer_lists {
     flex-direction: column;
   }
+}
 
-  .modal .modal_box {
-    width: 350px;
+@media (max-width: 414px) {
+  .header_content {
+    text-align: center;
+  }
+
+  .modal_box {
+    width: 22rem;
   }
 }
 
-@media (max-width: 425px) {
-  .header_content {
-    text-align: center;
+@media (max-width: 320px) {
+  .modal_box {
+    width: 19rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .modal_box {
+    width: 18rem;
   }
 }
