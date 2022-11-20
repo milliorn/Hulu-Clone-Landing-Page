@@ -110,8 +110,8 @@
   border: none;
   color: #fff;
   cursor: pointer;
-  font-weight: bold;
-  letter-spacing: 1px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 
