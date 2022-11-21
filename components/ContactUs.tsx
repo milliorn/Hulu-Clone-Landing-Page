@@ -1,6 +1,4 @@
-// next.js
 import Image from "next/image";
-// assets
 import facebook from "../public/img/facebook.svg";
 import instagram from "../public/img/instagram.svg";
 import twitter from "../public/img/twitter.svg";
