@@ -82,7 +82,11 @@ export default function Home() {
       <div className={styles.body}>
         <header className={styles.header}>
           <nav>
-            <button className={styles.btn_login} onClick={openModal}>
+            <button
+              type="button"
+              className={styles.btn_login}
+              onClick={openModal}
+            >
               Login
             </button>
           </nav>
@@ -106,7 +110,9 @@ export default function Home() {
             <div className={styles.header_text_2}>
               HBO Max™, SHOWTIME®, CINEMAX® and STARZ® available as add-ons.
             </div>
-            <button className={styles.btn_cta}>Start Your Free Trial</button>
+            <button type="button" className={styles.btn_cta}>
+              Start Your Free Trial
+            </button>
             <div className={styles.legal_text}>
               Free trial for new & eligible returning subscribers only.
             </div>
@@ -402,7 +408,9 @@ export default function Home() {
                 <p>
                   <a href="#">Forgot your email or password</a>
                 </p>
-                <button className={styles.btn_dark}>Log In</button>
+                <button type="button" className={styles.btn_dark}>
+                  Log In
+                </button>
               </form>
             </div>
             <div className={styles.modal_footer}>
