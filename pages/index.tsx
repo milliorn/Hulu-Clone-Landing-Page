@@ -52,6 +52,12 @@ export default function Home() {
       if (event.keyCode === 27) {
         closeModal();
       }
+
+      window.addEventListener("keydown", handleEsc);
+
+      () => {
+        window.removeEventListener("keydown", handleEsc);
+      };
     }
   }, []);
 
@@ -428,7 +434,6 @@ export default function Home() {
               alt="close"
               className={styles.close}
               onClick={closeModal}
-              placeholder="blur"
               src={close}
               style={{
                 cursor: "pointer",
