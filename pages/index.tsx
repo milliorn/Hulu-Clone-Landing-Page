@@ -340,9 +340,10 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className={styles.divider}></div>
+            <div className={styles.divider} />
 
-            <div className={styles.social_icons}>
+            <div style={{ textAlign: "center" }}>
+              {/* https://stackoverflow.com/a/9721943/11986604 */}
               <a href="#">
                 <Image
                   alt="facebook"
