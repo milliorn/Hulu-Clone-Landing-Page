@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { v4 as uuidv4 } from "uuid";
 import logo1 from "../public/img/live-sports-logo-1.webp";
 import logo2 from "../public/img/live-sports-logo-2.webp";
 import logo3 from "../public/img/live-sports-logo-3.svg";
@@ -17,7 +18,7 @@ export function LiveSportsLogos(): JSX.Element {
   return (
     <div className={styles.live_sports_logos}>
       {logoData.map((logo, i) => (
-        <div key={i}>
+        <div key={uuidv4()}>
           <Image
             alt={logo.alt}
             src={logo.src}

@@ -1,3 +1,4 @@
+import { v4 as uuidv4 } from "uuid";
 import styles from "../styles/Home.module.css";
 
 // categories found in index
@@ -8,7 +9,7 @@ export function Categories(): JSX.Element {
     { style: styles.cover_3, sub: "Groundbreaking", h3: "Hulu Originals" },
     { style: styles.cover_4, sub: "Add-On", h3: "Premiums" },
   ];
-  
+
   return (
     <section className={styles.categories}>
       <h4>Included in all plans</h4>
@@ -20,7 +21,7 @@ export function Categories(): JSX.Element {
 
       <div className={styles.covers}>
         {dataCategory.map((category, i) => (
-          <div key={i} className={category.style}>
+          <div key={uuidv4()} className={category.style}>
             <div className={styles.cover_grid} />
             <div className={styles.cover_text}>
               <div className="sub-title">{category.sub}</div>
