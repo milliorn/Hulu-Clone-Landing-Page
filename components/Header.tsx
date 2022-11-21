@@ -32,7 +32,7 @@ export function Header(props: {
           height="0"
           placeholder="blur"
           /** LCP */
-          priority={true}
+          priority
           src={logo}
           style={{ width: "256px", height: "auto", margin: "20px 0" }}
         />

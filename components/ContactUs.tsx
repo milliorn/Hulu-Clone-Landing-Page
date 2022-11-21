@@ -96,7 +96,7 @@ export function ContactUs(): JSX.Element {
             </li>
           </ul>
         </div>
-        <div className={styles.divider}></div>
+        99        <div className={styles.divider} />
 
         <div className={styles.social_icons}>
           <a href="#">
