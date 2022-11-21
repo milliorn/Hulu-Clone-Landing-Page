@@ -89,7 +89,7 @@ export default function Home() {
             <button
               type="button"
               className={styles.btn_login}
-              onClick={() => openModal()}
+              onClick={openModal}
             >
               Login
             </button>
@@ -97,13 +97,15 @@ export default function Home() {
 
           <section className={styles.header_content}>
             <h4>Try up to one month free</h4>
+            {/** https://stackoverflow.com/a/73618982/11986604 */}
             <Image
               alt="Hulu logo"
               className={styles.logo}
               height="0"
               placeholder="blur"
+              /** LCP */
+              priority={true}
               src={logo}
-              /** https://stackoverflow.com/a/73618982/11986604 */
               style={{ width: "256px", height: "auto", margin: "20px 0" }}
             />
             <div className={styles.header_text_1}>
@@ -352,10 +354,9 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className={styles.divider} />
+            <div className={styles.divider}></div>
 
-            <div style={{ textAlign: "center" }}>
-              {/* https://stackoverflow.com/a/9721943/11986604 */}
+            <div className={styles.social_icons}>
               <a href="#">
                 <Image
                   alt="facebook"
@@ -430,7 +431,7 @@ export default function Home() {
             <Image
               alt="close"
               className={styles.close}
-              onClick={() => closeModal()}
+              onClick={closeModal}
               src={close}
               style={{
                 cursor: "pointer",
