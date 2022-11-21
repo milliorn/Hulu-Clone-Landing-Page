@@ -1,18 +1,5 @@
 import styles from "../styles/Home.module.css";
 
-// container for links in footer
-export function FooterLists(): JSX.Element {
-  return (
-    <div className={styles.footer_lists}>
-      <BrowseLeft />
-      <BrowseCenter />
-      <BrowseRight />
-      <Help />
-      <About />
-    </div>
-  );
-}
-
 // about section in footer
 function About(): JSX.Element {
   return (
@@ -122,5 +109,18 @@ function BrowseLeft(): JSX.Element {
         <a href="#">Live Sports</a>
       </li>
     </ul>
+  );
+}
+
+// container for links in footer
+export function FooterLists(): JSX.Element {
+  return (
+    <div className={styles.footer_lists}>
+      <BrowseLeft />
+      <BrowseCenter />
+      <BrowseRight />
+      <Help />
+      <About />
+    </div>
   );
 }
