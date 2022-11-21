@@ -8,12 +8,12 @@ import Modal, { Styles } from "react-modal";
 import close from "../public/img/close.svg";
 import facebook from "../public/img/facebook.svg";
 import instagram from "../public/img/instagram.svg";
-import logo1 from "../public/img/live-sports-logo-1.png";
-import logo2 from "../public/img/live-sports-logo-2.png";
+import logo1 from "../public/img/live-sports-logo-1.webp";
+import logo2 from "../public/img/live-sports-logo-2.webp";
 import logo3 from "../public/img/live-sports-logo-3.svg";
-import logo4 from "../public/img/live-sports-logo-4.png";
-import logo from "../public/img/logo.png";
-import logos from "../public/img/logos.png";
+import logo4 from "../public/img/live-sports-logo-4.webp";
+import logo from "../public/img/logo.webp";
+import logos from "../public/img/logos.webp";
 import twitter from "../public/img/twitter.svg";
 import youtube from "../public/img/youtube.svg";
 /** styles */
@@ -200,6 +200,7 @@ export default function Home() {
           <div className={styles.live_sports_content}>
             <div className={styles.text_xl}>Live Sports</div>
             <div
+            className={styles.live_sports_paragraph}
               style={{
                 fontSize: "1.3rem",
               }}
