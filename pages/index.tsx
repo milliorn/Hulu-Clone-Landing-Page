@@ -19,9 +19,11 @@ import youtube from "../public/img/youtube.svg";
 /** styles */
 import styles from "../styles/Home.module.css";
 
+// main app
 export default function Home() {
   const [modalIsOpen, setIsOpen] = useState(false);
 
+  // open modal
   function openModal(): void {
     setIsOpen(true);
 
@@ -32,6 +34,7 @@ export default function Home() {
     }
   }
 
+  // closes modal
   function closeModal(): void {
     setIsOpen(false);
 
@@ -44,6 +47,7 @@ export default function Home() {
 
   /** https://stackoverflow.com/a/57613476/11986604 */
   useEffect(() => {
+    // escapes out of the modal if esc key is pressed
     function handleEsc(event: { keyCode: number }): void {
       if (event.keyCode === 27) {
         closeModal();
