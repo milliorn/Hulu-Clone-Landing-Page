@@ -8,12 +8,12 @@ import Modal, { Styles } from "react-modal";
 import close from "../public/img/close.svg";
 import facebook from "../public/img/facebook.svg";
 import instagram from "../public/img/instagram.svg";
-import logo1 from "../public/img/live-sports-logo-1.png";
-import logo2 from "../public/img/live-sports-logo-2.png";
+import logo1 from "../public/img/live-sports-logo-1.webp";
+import logo2 from "../public/img/live-sports-logo-2.webp";
 import logo3 from "../public/img/live-sports-logo-3.svg";
-import logo4 from "../public/img/live-sports-logo-4.png";
-import logo from "../public/img/logo.png";
-import logos from "../public/img/logos.png";
+import logo4 from "../public/img/live-sports-logo-4.webp";
+import logo from "../public/img/logo.webp";
+import logos from "../public/img/logos.webp";
 import twitter from "../public/img/twitter.svg";
 import youtube from "../public/img/youtube.svg";
 /** styles */
@@ -87,12 +87,14 @@ export default function Home() {
             <h4>Try up to one month free</h4>
             {/** https://stackoverflow.com/a/73618982/11986604 */}
             <Image
-              src={logo}
               alt="Hulu logo"
-              className="logo"
+              className={styles.logo}
               height="0"
-              width="270"
-              style={{ width: "auto", height: "auto", margin: "20px 0" }}
+              placeholder="blur"
+              /** LCP */
+              priority={true}
+              src={logo}
+              style={{ width: "256px", height: "auto", margin: "20px 0" }}
             />
             <div className={styles.header_text_1}>
               Watch thousands of TV shows and movies.
@@ -109,10 +111,12 @@ export default function Home() {
 
         <section className={styles.sub_header}>
           <Image
-            src={logos}
             alt="sub header logo"
-            width="250"
-            style={{ width: "auto", height: "auto", margin: "auto" }}
+            className={styles.sub_header_img}
+            placeholder="blur"
+            src={logos}
+            style={{ width: "256", height: "auto" }}
+            width="256"
           />
           <div>
             <h4>Bundle with any Hulu plan & save</h4>
@@ -185,14 +189,26 @@ export default function Home() {
               Live TV plan required. Regional restrictions, blackouts and
               additional terms apply. See details
             </div>
-            <a href="#">View Channels in Your Area</a>
+            <a
+              href="#"
+              style={{
+                color: "white",
+              }}
+            >
+              View Channels in Your Area
+            </a>
           </div>
         </section>
 
         <section className={styles.live_sports}>
           <div className={styles.live_sports_content}>
             <div className={styles.text_xl}>Live Sports</div>
-            <div className="sub-text">
+            <div
+              className={styles.live_sports_paragraph}
+              style={{
+                fontSize: "1.3rem",
+              }}
+            >
               Catch your games at home or on the go. Stream live games from
               major college and pro leagues including the NCAA®, NBA, NHL, NFL,
               and more.
@@ -202,6 +218,7 @@ export default function Home() {
               <div>
                 <Image
                   alt="cbs sports logo"
+                  placeholder="blur"
                   src={logo1}
                   style={{ width: "40px", height: "auto" }}
                 />
@@ -209,6 +226,7 @@ export default function Home() {
               <div>
                 <Image
                   alt="espn logo"
+                  placeholder="blur"
                   src={logo2}
                   style={{ width: "40px", height: "auto" }}
                 />
@@ -222,8 +240,9 @@ export default function Home() {
               </div>
               <div>
                 <Image
-                  src={logo4}
                   alt="nbc golf logo"
+                  placeholder="blur"
+                  src={logo4}
                   style={{ width: "40px", height: "auto" }}
                 />
               </div>
@@ -325,16 +344,32 @@ export default function Home() {
 
             <div className={styles.social_icons}>
               <a href="#">
-                <Image src={facebook} alt="facebook" />
+                <Image
+                  alt="facebook"
+                  className={styles.social_icons_img}
+                  src={facebook}
+                />
               </a>
               <a href="#">
-                <Image src={twitter} alt="twitter" />
+                <Image
+                  alt="twitter"
+                  className={styles.social_icons_img}
+                  src={twitter}
+                />
               </a>
               <a href="#">
-                <Image src={youtube} alt="youtube" />
+                <Image
+                  alt="youtube"
+                  className={styles.social_icons_img}
+                  src={youtube}
+                />
               </a>
               <a href="#">
-                <Image src={instagram} alt="instagram" />
+                <Image
+                  alt="instagram"
+                  className={styles.social_icons_img}
+                  src={instagram}
+                />
               </a>
             </div>
           </div>
@@ -378,10 +413,11 @@ export default function Home() {
               </a>
             </div>
             <Image
-              className={styles.close}
-              src={close}
-              onClick={closeModal}
               alt="close"
+              className={styles.close}
+              onClick={closeModal}
+              placeholder="blur"
+              src={close}
               style={{
                 cursor: "pointer",
                 position: "absolute",
