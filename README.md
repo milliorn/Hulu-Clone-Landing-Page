@@ -6,7 +6,7 @@
 [![CodeQL](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/codeql.yml/badge.svg)](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/codeql.yml)
 [![Dependency Review](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/dependency-review.yml)
 [![DevSkim](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/devskim.yml/badge.svg)](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/devskim.yml)
-[![OSSAR](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/ossar.yml/badge.svg)](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/ossar.yml)
+[![Lint Code Base](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/super-linter.yml/badge.svg)](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/super-linter.yml)[![OSSAR](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/ossar.yml/badge.svg)](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/ossar.yml)
 [![pmd](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/pmd.yml/badge.svg)](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/pmd.yml)
 [![Semgrep](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/semgrep.yml/badge.svg)](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/semgrep.yml)
 
