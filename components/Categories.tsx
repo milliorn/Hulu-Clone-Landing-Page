@@ -8,7 +8,7 @@ export function Categories(): JSX.Element {
     { style: styles.cover_3, sub: "Groundbreaking", h3: "Hulu Originals" },
     { style: styles.cover_4, sub: "Add-On", h3: "Premiums" },
   ];
-  
+
   return (
     <section className={styles.categories}>
       <h4>Included in all plans</h4>
