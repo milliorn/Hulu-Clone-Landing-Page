@@ -47,7 +47,7 @@ export default function Home() {
 
   /** https://stackoverflow.com/a/57613476/11986604 */
   useEffect(() => {
-    function handleEsc(event: { keyCode: number; }) {
+    function handleEsc(event: { keyCode: number }) {
       if (event.keyCode === 27) {
         closeModal();
       }
@@ -89,7 +89,7 @@ export default function Home() {
             <button
               type="button"
               className={styles.btn_login}
-              onClick={openModal}
+              onClick={() => openModal()}
             >
               Login
             </button>
@@ -431,7 +431,7 @@ export default function Home() {
             <Image
               alt="close"
               className={styles.close}
-              onClick={closeModal}
+              onClick={() => closeModal()}
               src={close}
               style={{
                 cursor: "pointer",
