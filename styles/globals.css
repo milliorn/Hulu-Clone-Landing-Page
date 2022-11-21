@@ -15,8 +15,12 @@ a:hover {
   color: #aaa;
 }
 
-ul {
-  list-style-type: none;
+footer a {
+  color: #333;
+}
+
+footer {
+  background: #ebedf2;
 }
 
 h3 {
@@ -30,10 +34,6 @@ h4 {
   text-transform: uppercase;
 }
 
-footer {
-  background: #ebedf2;
-}
-
-footer a {
-  color: #333;
+ul {
+  list-style-type: none;
 }
