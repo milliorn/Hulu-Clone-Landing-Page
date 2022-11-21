@@ -1,5 +1,15 @@
 # Hulu Clone
 
+[![DeepSource](https://deepsource.io/gh/milliorn/Hulu-Clone-Landing-Page.svg/?label=active+issues&show_trend=true&token=JucbngtwHxNrD1kuNefcdbqf)](https://deepsource.io/gh/milliorn/Hulu-Clone-Landing-Page/?ref=repository-badge)
+[![DeepSource](https://deepsource.io/gh/milliorn/Hulu-Clone-Landing-Page.svg/?label=resolved+issues&show_trend=true&token=JucbngtwHxNrD1kuNefcdbqf)](https://deepsource.io/gh/milliorn/Hulu-Clone-Landing-Page/?ref=repository-badge)
+[![Codacy Security Scan](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/codacy.yml/badge.svg)](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/codacy.yml)
+[![CodeQL](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/codeql.yml/badge.svg)](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/codeql.yml)
+[![Dependency Review](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/dependency-review.yml)
+[![DevSkim](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/devskim.yml/badge.svg)](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/devskim.yml)
+[![OSSAR](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/ossar.yml/badge.svg)](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/ossar.yml)
+[![pmd](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/pmd.yml/badge.svg)](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/pmd.yml)
+[![Semgrep](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/semgrep.yml/badge.svg)](https://github.com/milliorn/Hulu-Clone-Landing-Page/actions/workflows/semgrep.yml)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
