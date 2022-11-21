@@ -85,15 +85,13 @@ export default function Home() {
 
           <section className={styles.header_content}>
             <h4>Try up to one month free</h4>
-            {/** https://stackoverflow.com/a/73618982/11986604 */}
             <Image
               alt="Hulu logo"
               className={styles.logo}
               height="0"
               placeholder="blur"
-              /** LCP */
-              priority={true}
               src={logo}
+              /** https://stackoverflow.com/a/73618982/11986604 */
               style={{ width: "256px", height: "auto", margin: "20px 0" }}
             />
             <div className={styles.header_text_1}>
