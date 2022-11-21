@@ -5,6 +5,7 @@ import logo3 from "../public/img/live-sports-logo-3.svg";
 import logo4 from "../public/img/live-sports-logo-4.webp";
 import styles from "../styles/Home.module.css";
 
+// generate live sports logos
 export function LiveSportsLogos(): JSX.Element {
   const logoData = [
     { alt: "cbs logo", src: logo1 },

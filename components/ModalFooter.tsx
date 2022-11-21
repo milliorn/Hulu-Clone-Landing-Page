@@ -1,5 +1,6 @@
 import styles from "../styles/Home.module.css";
 
+// inner modal footer
 export function ModalFooter(): JSX.Element {
   return (
     <div className={styles.modal_footer}>

@@ -1,5 +1,6 @@
 import styles from "../styles/Home.module.css";
 
+// inner modal body with form and button
 export function ModalBody(): JSX.Element {
   return (
     <div className={styles.modal_body}>

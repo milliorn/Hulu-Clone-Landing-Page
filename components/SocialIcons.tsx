@@ -5,6 +5,7 @@ import twitter from "../public/img/twitter.svg";
 import youtube from "../public/img/youtube.svg";
 import styles from "../styles/Home.module.css";
 
+// generate social media buttons in footer
 export function SocialIcons(): JSX.Element {
   const dataSocial = [
     { alt: "facebook", src: facebook },
@@ -21,7 +22,7 @@ export function SocialIcons(): JSX.Element {
             alt={social.alt}
             className={styles.social_icons_img}
             src={social.src}
-            style={{width: "auto"}}
+            style={{ width: "auto" }}
           />
         </a>
       ))}

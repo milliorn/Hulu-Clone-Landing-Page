@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import { ModalBody } from "./ModalBody";
 import { ModalFooter } from "./ModalFooter";
 
+// outer modal body
 export function ModalBox(props: {
   modalIsOpen: boolean;
   closeModal: () => void;
