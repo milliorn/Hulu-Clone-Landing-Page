@@ -19,9 +19,11 @@ import youtube from "../public/img/youtube.svg";
 /** styles */
 import styles from "../styles/Home.module.css";
 
+// main app
 export default function Home() {
   const [modalIsOpen, setIsOpen] = useState(false);
 
+  // open modal
   function openModal(): void {
     setIsOpen(true);
 
@@ -32,6 +34,7 @@ export default function Home() {
     }
   }
 
+  // closes modal
   function closeModal(): void {
     setIsOpen(false);
 
@@ -44,11 +47,16 @@ export default function Home() {
 
   /** https://stackoverflow.com/a/57613476/11986604 */
   useEffect(() => {
-    function handleEsc(event: { keyCode: number }): void {
+    function handleEsc(event: { keyCode: number }) {
       if (event.keyCode === 27) {
         closeModal();
       }
     }
+    window.addEventListener("keydown", handleEsc);
+
+    return () => {
+      window.removeEventListener("keydown", handleEsc);
+    };
   }, []);
 
   const customStyles = {
@@ -78,20 +86,26 @@ export default function Home() {
       <div className={styles.body}>
         <header className={styles.header}>
           <nav>
-            <button className={styles.btn_login} onClick={openModal}>
+            <button
+              type="button"
+              className={styles.btn_login}
+              onClick={openModal}
+            >
               Login
             </button>
           </nav>
 
           <section className={styles.header_content}>
             <h4>Try up to one month free</h4>
+            {/** https://stackoverflow.com/a/73618982/11986604 */}
             <Image
               alt="Hulu logo"
               className={styles.logo}
               height="0"
               placeholder="blur"
+              /** LCP */
+              priority={true}
               src={logo}
-              /** https://stackoverflow.com/a/73618982/11986604 */
               style={{ width: "256px", height: "auto", margin: "20px 0" }}
             />
             <div className={styles.header_text_1}>
@@ -100,7 +114,9 @@ export default function Home() {
             <div className={styles.header_text_2}>
               HBO Max™, SHOWTIME®, CINEMAX® and STARZ® available as add-ons.
             </div>
-            <button className={styles.btn_cta}>Start Your Free Trial</button>
+            <button type="button" className={styles.btn_cta}>
+              Start Your Free Trial
+            </button>
             <div className={styles.legal_text}>
               Free trial for new & eligible returning subscribers only.
             </div>
@@ -144,28 +160,28 @@ export default function Home() {
 
           <div className={styles.covers}>
             <div className={styles.cover_1}>
-              <div className={styles.cover_grid}></div>
+              <div className={styles.cover_grid} />
               <div className={styles.cover_text}>
                 <div className="sub-title">Past & Current Seasons</div>
                 <h3>TV Shows</h3>
               </div>
             </div>
             <div className={styles.cover_2}>
-              <div className={styles.cover_grid}></div>
+              <div className={styles.cover_grid} />
               <div className={styles.cover_text}>
                 <div className="sub-title">New & Classics</div>
                 <h3>Movies</h3>
               </div>
             </div>
             <div className={styles.cover_3}>
-              <div className={styles.cover_grid}></div>
+              <div className={styles.cover_grid} />
               <div className={styles.cover_text}>
                 <div className="sub-title">Groundbreaking</div>
                 <h3>Hulu Originals</h3>
               </div>
             </div>
             <div className={styles.cover_4}>
-              <div className={styles.cover_grid}></div>
+              <div className={styles.cover_grid} />
               <div className={styles.cover_text}>
                 <div className="sub-title">Add-On</div>
                 <h3>Premiums</h3>
@@ -338,10 +354,9 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <div className={styles.divider} />
+            <div className={styles.divider}></div>
 
-            <div style={{ textAlign: "center" }}>
-              {/* https://stackoverflow.com/a/9721943/11986604 */}
+            <div className={styles.social_icons}>
               <a href="#">
                 <Image
                   alt="facebook"
@@ -397,7 +412,9 @@ export default function Home() {
                 <p>
                   <a href="#">Forgot your email or password</a>
                 </p>
-                <button className={styles.btn_dark}>Log In</button>
+                <button type="button" className={styles.btn_dark}>
+                  Log In
+                </button>
               </form>
             </div>
             <div className={styles.modal_footer}>
@@ -415,7 +432,6 @@ export default function Home() {
               alt="close"
               className={styles.close}
               onClick={closeModal}
-              placeholder="blur"
               src={close}
               style={{
                 cursor: "pointer",
