@@ -87,10 +87,13 @@ export default function Home() {
             <h4>Try up to one month free</h4>
             {/** https://stackoverflow.com/a/73618982/11986604 */}
             <Image
-              src={logo}
               alt="Hulu logo"
               className={styles.logo}
               height="0"
+              placeholder="blur"
+              /** LCP */
+              priority={true}
+              src={logo}
               style={{ width: "256px", height: "auto", margin: "20px 0" }}
             />
             <div className={styles.header_text_1}>
@@ -108,11 +111,12 @@ export default function Home() {
 
         <section className={styles.sub_header}>
           <Image
-            src={logos}
             alt="sub header logo"
-            width="256"
-            style={{ width: "256", height: "auto" }}
             className={styles.sub_header_img}
+            placeholder="blur"
+            src={logos}
+            style={{ width: "256", height: "auto" }}
+            width="256"
           />
           <div>
             <h4>Bundle with any Hulu plan & save</h4>
@@ -200,7 +204,7 @@ export default function Home() {
           <div className={styles.live_sports_content}>
             <div className={styles.text_xl}>Live Sports</div>
             <div
-            className={styles.live_sports_paragraph}
+              className={styles.live_sports_paragraph}
               style={{
                 fontSize: "1.3rem",
               }}
@@ -214,6 +218,7 @@ export default function Home() {
               <div>
                 <Image
                   alt="cbs sports logo"
+                  placeholder="blur"
                   src={logo1}
                   style={{ width: "40px", height: "auto" }}
                 />
@@ -221,6 +226,7 @@ export default function Home() {
               <div>
                 <Image
                   alt="espn logo"
+                  placeholder="blur"
                   src={logo2}
                   style={{ width: "40px", height: "auto" }}
                 />
@@ -234,8 +240,9 @@ export default function Home() {
               </div>
               <div>
                 <Image
-                  src={logo4}
                   alt="nbc golf logo"
+                  placeholder="blur"
+                  src={logo4}
                   style={{ width: "40px", height: "auto" }}
                 />
               </div>
@@ -338,30 +345,30 @@ export default function Home() {
             <div className={styles.social_icons}>
               <a href="#">
                 <Image
-                  src={facebook}
                   alt="facebook"
                   className={styles.social_icons_img}
+                  src={facebook}
                 />
               </a>
               <a href="#">
                 <Image
-                  src={twitter}
                   alt="twitter"
                   className={styles.social_icons_img}
+                  src={twitter}
                 />
               </a>
               <a href="#">
                 <Image
-                  src={youtube}
                   alt="youtube"
                   className={styles.social_icons_img}
+                  src={youtube}
                 />
               </a>
               <a href="#">
                 <Image
-                  src={instagram}
                   alt="instagram"
                   className={styles.social_icons_img}
+                  src={instagram}
                 />
               </a>
             </div>
@@ -406,10 +413,11 @@ export default function Home() {
               </a>
             </div>
             <Image
-              className={styles.close}
-              src={close}
-              onClick={closeModal}
               alt="close"
+              className={styles.close}
+              onClick={closeModal}
+              placeholder="blur"
+              src={close}
               style={{
                 cursor: "pointer",
                 position: "absolute",
