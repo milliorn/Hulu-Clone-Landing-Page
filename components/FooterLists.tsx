@@ -1,5 +1,6 @@
 import styles from "../styles/Home.module.css";
 
+// container for links in footer
 export function FooterLists(): JSX.Element {
   return (
     <div className={styles.footer_lists}>
