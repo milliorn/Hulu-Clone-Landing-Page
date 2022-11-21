@@ -1,9 +1,5 @@
-import Image from "next/image";
-import facebook from "../public/img/facebook.svg";
-import instagram from "../public/img/instagram.svg";
-import twitter from "../public/img/twitter.svg";
-import youtube from "../public/img/youtube.svg";
 import styles from "../styles/Home.module.css";
+import { SocialIcons } from "./SocialIcons";
 
 // footer for index
 export function ContactUs(): JSX.Element {
@@ -94,38 +90,10 @@ export function ContactUs(): JSX.Element {
             </li>
           </ul>
         </div>
-        99        <div className={styles.divider} />
 
-        <div className={styles.social_icons}>
-          <a href="#">
-            <Image
-              alt="facebook"
-              className={styles.social_icons_img}
-              src={facebook}
-            />
-          </a>
-          <a href="#">
-            <Image
-              alt="twitter"
-              className={styles.social_icons_img}
-              src={twitter}
-            />
-          </a>
-          <a href="#">
-            <Image
-              alt="youtube"
-              className={styles.social_icons_img}
-              src={youtube}
-            />
-          </a>
-          <a href="#">
-            <Image
-              alt="instagram"
-              className={styles.social_icons_img}
-              src={instagram}
-            />
-          </a>
-        </div>
+        <div className={styles.divider} />
+
+        <SocialIcons />
       </div>
     </footer>
   );
