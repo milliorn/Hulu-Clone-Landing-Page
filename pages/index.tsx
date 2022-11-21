@@ -47,18 +47,16 @@ export default function Home() {
 
   /** https://stackoverflow.com/a/57613476/11986604 */
   useEffect(() => {
-    // escapes out of the modal if esc key is pressed
-    function handleEsc(event: { keyCode: number }): void {
+    function handleEsc(event: { keyCode: number; }) {
       if (event.keyCode === 27) {
         closeModal();
       }
-
-      window.addEventListener("keydown", handleEsc);
-
-      () => {
-        window.removeEventListener("keydown", handleEsc);
-      };
     }
+    window.addEventListener("keydown", handleEsc);
+
+    return () => {
+      window.removeEventListener("keydown", handleEsc);
+    };
   }, []);
 
   const customStyles = {
