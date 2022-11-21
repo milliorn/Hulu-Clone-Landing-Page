@@ -17,7 +17,7 @@ export function Header(props: {
         <button
           type="button"
           className={styles.btn_login}
-          onClick={props.openModal}
+          onClick={props.openModal} // skipcq: JS-0411
         >
           Login
         </button>

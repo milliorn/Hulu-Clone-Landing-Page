@@ -61,6 +61,7 @@ export default function Home() {
         <title>Stream TV and Movies Live and Online | Hulu</title>
       </Head>
       <Body openModal={openModal} />
+      {/* skipcq: JS-0417 */}
       <LoginModal modalIsOpen={modalIsOpen} closeModal={closeModal} />
     </div>
   );

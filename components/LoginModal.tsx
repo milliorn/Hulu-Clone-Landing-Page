@@ -27,7 +27,7 @@ export function LoginModal(props: {
   return (
     <Modal
       isOpen={props.modalIsOpen}
-      onRequestClose={props.closeModal}
+      onRequestClose={props.closeModal} // skipcq: JS-0411
       style={customStyles}
       /** https://stackoverflow.com/a/50625073/11986604 */
       ariaHideApp={false}
@@ -67,7 +67,7 @@ export function LoginModal(props: {
           <Image
             alt="close"
             className={styles.close}
-            onClick={props.closeModal}
+            onClick={props.closeModal} // skipcq: JS-0411
             src={close}
             style={{
               cursor: "pointer",
