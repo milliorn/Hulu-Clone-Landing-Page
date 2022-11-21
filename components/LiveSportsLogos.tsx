@@ -17,7 +17,7 @@ export function LiveSportsLogos(): JSX.Element {
 
   return (
     <div className={styles.live_sports_logos}>
-      {logoData.map((logo, i) => (
+      {logoData.map((logo) => (
         <div key={uuidv4()}>
           <Image
             alt={logo.alt}

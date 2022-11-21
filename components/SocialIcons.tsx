@@ -17,7 +17,7 @@ export function SocialIcons(): JSX.Element {
 
   return (
     <div className={styles.social_icons}>
-      {dataSocial.map((social, i) => (
+      {dataSocial.map((social) => (
         <a href="#" key={uuidv4()}>
           <Image
             alt={social.alt}

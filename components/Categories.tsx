@@ -20,7 +20,7 @@ export function Categories(): JSX.Element {
       </div>
 
       <div className={styles.covers}>
-        {dataCategory.map((category, i) => (
+        {dataCategory.map((category) => (
           <div key={uuidv4()} className={category.style}>
             <div className={styles.cover_grid} />
             <div className={styles.cover_text}>
