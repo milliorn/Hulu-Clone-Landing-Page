@@ -1,5 +1,4 @@
 /** next.js */
-import Head from "next/head";
 import Image from "next/image";
 /** react */
 import { useEffect, useState } from "react";
@@ -18,6 +17,8 @@ import twitter from "../public/img/twitter.svg";
 import youtube from "../public/img/youtube.svg";
 /** styles */
 import styles from "../styles/Home.module.css";
+/** components */
+import { GlobalHead } from "../components/GlobalHead";
 
 // main app
 export default function Home() {
@@ -73,15 +74,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="description"
-          content="Watch TV shows and movies online. Stream TV episodes of Grey's Anatomy, This Is Us, Bob's Burgers, Brooklyn Nine-Nine, Empire, SNL, and popular movies on your favorite devices. Start your free trial now. Cancel anytime."
-          key="desc"
-        />
-        <title>Stream TV and Movies Live and Online | Hulu</title>
-      </Head>
+      <GlobalHead />
 
       <div className={styles.body}>
         <header className={styles.header}>
@@ -389,6 +382,7 @@ export default function Home() {
           </div>
         </footer>
       </div>
+
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
