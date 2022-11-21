@@ -1,10 +1,6 @@
-// next.js
 import Image from "next/image";
-// react
 import { MouseEventHandler } from "react";
-// assets
 import logo from "../public/img/logo.webp";
-// css
 import styles from "../styles/Home.module.css";
 
 // header for index
